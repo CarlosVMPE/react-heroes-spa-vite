@@ -1,4 +1,4 @@
-import { HashRouter as Route, Routes } from "react-router-dom"
+import { Route, HashRouter as Routes } from "react-router-dom"
 
 import { LoginPage } from "../auth"
 import { PublicRoute } from "./PublicRoute"
