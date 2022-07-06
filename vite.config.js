@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  //base: '/react-heroes-spa-vite',
+  base: '/react-heroes-spa-vite',
   plugins: [react()]
 })
