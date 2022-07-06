@@ -1,11 +1,14 @@
 {
   "name": "heroes-spa-vite",
+  "homepage": "https://github.com/CarlosVMPE/react-heroes-spa-vite/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "query-string": "^7.1.1",
