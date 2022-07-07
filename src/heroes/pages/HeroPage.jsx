@@ -21,7 +21,7 @@ export const HeroPage = () => {
       <div className="col-4 animate__animated animate__fadeInLeft">
         <img
           className='img-thumbnail'
-          src={`vite/assets/heroes/${id}.jpg`}
+          src={`/react-heroes-spa-vite/assets/heroes/${id}.jpg`}
           alt={hero.superhero} />
       </div>
 
