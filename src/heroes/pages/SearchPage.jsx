@@ -21,6 +21,7 @@ export const SearchPage = () => {
   });
 
   const onSearchSubmit = (e) => {
+    console.log(e);
     e.preventDefault();
     //if (searchText.trim().length <= 1) return;
 
@@ -37,7 +38,7 @@ export const SearchPage = () => {
           <h4>Searching</h4>
           <hr />
 
-          <form onSubmit={onSearchSubmit}>
+          <form aria-label='search-form' onSubmit={onSearchSubmit}>
             <input
               type="text"
               placeholder='Search a hero'
@@ -67,7 +68,7 @@ export const SearchPage = () => {
 
           <div className="alert alert-primary animate__animated animate__fadeIn" style={{ display: showSearch ? '' : 'none' }}>Search a hero</div>
 
-          <div className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none' }}>No hero with <strong>{q}</strong></div>
+          <div aria-label='alert-danger' className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none' }}>No hero with <strong>{q}</strong></div>
 
           {
             heroes.map(hero => (

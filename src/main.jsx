@@ -6,7 +6,9 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename='/react-heroes-spa-vite'>
+    {/* For deploy gh-pages */}
+    {/* basename='/react-heroes-spa-vite' */}
+    <BrowserRouter>
       <HeroesApp />
     </BrowserRouter>
   </React.StrictMode>
